@@ -35,7 +35,7 @@ class RegressionTree:
         bestSplittingValue = 0
 
         for column in self.getColumns():
-            
+
             data.sort(key=lambda x: x[column])
 
             for i in range(1, len(data)):
@@ -134,7 +134,7 @@ if __name__ == "__main__":
 
     # accuracy on testing data with MAPE
 
-    file = open('./houses-data-training.json')
+    file = open('./houses-data-testing.json')
     testingData = json.load(file)
     file.close()
 
